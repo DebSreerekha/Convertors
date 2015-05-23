@@ -18,7 +18,7 @@ public class RomanToArabicConvertorTest {
 		int  value = convertor.convert("I") ;
 		assertEquals(1,value);
 	}
-	/*@Test
+	@Test
 	public void testConvertII() {
 		
 		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
@@ -32,7 +32,7 @@ public class RomanToArabicConvertorTest {
 		int  value = convertor.convert("III") ;
 		assertEquals(3,value);
 	}
-	*/
+	
 	@Test
 	public void testConvertIV() {
 		
@@ -47,7 +47,7 @@ public class RomanToArabicConvertorTest {
 		int  value = convertor.convert("V") ;
 		assertEquals(5,value);
 	}
-	/*@Test
+	@Test
 	public void testConvertVI() {
 		
 		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
@@ -68,7 +68,7 @@ public class RomanToArabicConvertorTest {
 		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
 		int  value = convertor.convert("VIII") ;
 		assertEquals(8,value);
-	}*/
+	}
 	@Test
 	public void testConvertIX() {
 		
@@ -83,7 +83,7 @@ public class RomanToArabicConvertorTest {
 		int  value = convertor.convert("X") ;
 		assertEquals(10,value);
 	}
-	/*@Test
+	@Test
 	public void testConvertXI() {
 		
 		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
@@ -96,7 +96,7 @@ public class RomanToArabicConvertorTest {
 		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
 		int  value = convertor.convert("XII") ;
 		assertEquals(12,value);
-	}*/
+	}
 	@Test
 	public void testConvertXL() {
 		
@@ -153,5 +153,64 @@ public class RomanToArabicConvertorTest {
 		int  value = convertor.convert("M") ;
 		assertEquals(1000,value);
 	}
-
+	@Test
+	public void testConvertMM() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("MM") ;
+		assertEquals(2000,value);
+	}
+	@Test
+	public void testConvertIIII() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("IIII") ;
+		assertEquals(4,value);
+	}
+	@Test
+	public void testConvertXXXIX() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("XXXIX") ;
+		assertEquals(39,value);
+	}
+	@Test
+	public void testConvertMCMIX() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("MCMIX") ;
+		assertEquals(1909,value);
+	}
+	/*@Test
+	public void testConvertM() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("M") ;
+		assertEquals(1000,value);
+	}@Test
+	public void testConvertM() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("M") ;
+		assertEquals(1000,value);
+	}@Test
+	public void testConvertM() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("M") ;
+		assertEquals(1000,value);
+	}@Test
+	public void testConvertM() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("M") ;
+		assertEquals(1000,value);
+	}@Test
+	public void testConvertM() {
+		
+		RomanToArabicConvertor convertor = new  RomanToArabicConvertor();
+		int  value = convertor.convert("M") ;
+		assertEquals(1000,value);
+	}
+*/
 }
