@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
  *
  */
 public class RomanToArabicConvertor {
-	private  HashMap<String,Integer> ConstantsMap ;
+	private  HashMap<String,Integer> constantsMap ;
 	
 	
 	/**
@@ -18,12 +18,12 @@ public class RomanToArabicConvertor {
 	 */
 	public RomanToArabicConvertor()
 	{
-		ConstantsMap = new HashMap<String,Integer>();
+		constantsMap = new HashMap<String,Integer>();
 		int size = Constants.RomanConstantsArray.length ;
 		int i = 0;
 		while(i<size)
 		{
-			ConstantsMap.put(Constants.RomanConstantsArray[i],new Integer(Constants.ArabicValuesArray[i]));
+			constantsMap.put(Constants.RomanConstantsArray[i],new Integer(Constants.ArabicValuesArray[i]));
 			i++;
 		}
 	}
@@ -42,11 +42,11 @@ public class RomanToArabicConvertor {
 		
 		if (isValid(str))
 		{
-			Integer Value = ConstantsMap.get(str);
+			Integer value = constantsMap.get(str);
 			
-			if( Value != null)
+			if( value != null)
 			{
-				 intValue = Value.intValue();
+				 intValue = value.intValue();
 			}
 			else //XXIX  XXXIX
 			{
@@ -58,7 +58,7 @@ public class RomanToArabicConvertor {
 				{
 					String key1 = ""+str.charAt(j);
 					
-					Integer val1 = ConstantsMap.get(key1);
+					Integer val1 = constantsMap.get(key1);
 					
 					int currentKeyValue = val1.intValue();
 					
