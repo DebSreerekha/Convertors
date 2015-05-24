@@ -74,6 +74,10 @@ public class RomanToArabicConvertor {
 				}
 			}
 		}
+		else
+		{
+				intValue = -1;
+		}
 		return intValue;
 	}
 	/**
@@ -93,10 +97,7 @@ public class RomanToArabicConvertor {
 		if(m.find())
 		{
 	       validity = true;
-	    } else 
-	    {
-	         System.out.println("NO MATCH");
-	    }  
+	    } 
 		return validity;
 	}
 	
