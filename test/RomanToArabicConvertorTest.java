@@ -130,6 +130,38 @@ public class RomanToArabicConvertorTest {
 	public void  checkConversionForRomanThreethousand() {
 		assertEquals(3000,new RomanToArabicConvertor().convert("MMM"));
 	}
+	@Test 
+	public void  checkConversionForRomanFivethousand() {
+		assertEquals(5000,new RomanToArabicConvertor().convert("ↁ"));
+	}
+	@Test
+	public void  checkConversionForRomanFourthousand() {
+		assertEquals(4000,new RomanToArabicConvertor().convert("Mↁ"));
+	}
+	@Test
+	public void  checkConversionForRomanNinethousand() {
+		assertEquals(9000,new RomanToArabicConvertor().convert("Mↂ"));
+	}
+	@Test
+	public void  checkConversionForRomanTenthousand() {
+		assertEquals(10000,new RomanToArabicConvertor().convert("ↂ"));
+	}
+	@Test 
+	public void  checkConversionForRomanFivethousandUsingUnicode() {
+		assertEquals(5000,new RomanToArabicConvertor().convert("\u2181"));
+	}
+	@Test
+	public void  checkConversionForRomanFourthousandusingUnicode() {
+		assertEquals(4000,new RomanToArabicConvertor().convert("M\u2181"));
+	}
+	@Test
+	public void  checkConversionForRomanNinethousandUsingUnicode() {
+		assertEquals(9000,new RomanToArabicConvertor().convert("M\u2182"));
+	}
+	@Test
+	public void  checkConversionForRomanTenthousandUsingUnicode() {
+		assertEquals(10000,new RomanToArabicConvertor().convert("\u2182"));
+	}
 	
 	/**
 	 * the following tests should are to check invalid data 

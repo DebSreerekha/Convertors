@@ -90,7 +90,7 @@ public class RomanToArabicConvertor {
 	 */
 	private boolean isValid(String roman)
 	{
-		String pattern = "^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$";
+		String pattern =  "^\u2182{0,3}(M\u2182|M\u2181|\u2181?M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$";
 		Pattern r = Pattern.compile(pattern);
 		boolean validity = false;
 		Matcher m = r.matcher(roman);
@@ -100,16 +100,7 @@ public class RomanToArabicConvertor {
 	    } 
 		return validity;
 	}
-	
-	public static void main(String []args)
-	{
-		RomanToArabicConvertor converter = new RomanToArabicConvertor();
-		
-		System.out.println( converter.convert("XXIX"));
-		System.out.println( converter.convert("MCMIX"));
-		//System.out.println( converter.convert("II"));
-		
-	}
+
 }
 
 
