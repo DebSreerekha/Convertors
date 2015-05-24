@@ -36,7 +36,7 @@ public class RomanToArabicConvertor {
 		
 		if (RegExRomanValidator.validateRomanString(romanNumeral)){
 			Integer value = constantsMap.get(romanNumeral);
-			//int Value = RomanConstants.ROMAN_CONSTANTS.valueOf(romanNumeral);
+			//int Value = RomanConstants.ROMAN_CONSTANTS.getValue(romanNumeral);
 			
 			if( value != null)
 				arabicValue = value.intValue();
