@@ -167,34 +167,34 @@ public class RomanToArabicConvertorTest {
 	 * the following tests should are to check invalid data 
 	 */
 	@Test
-	public void  testNegativeConversionForFour() {
+	public void  checkNegativeConversionForFour() {
 		assertEquals(-1,new RomanToArabicConvertor().convert("IIII"));
 	}
 	@Test
-	public void  testNegativeConversionForFourHundred() {
+	public void  checkNegativeConversionForFourHundred() {
 		assertEquals(-1,new RomanToArabicConvertor().convert("CCCC"));
 	}
 	@Test
-	public void  testNegativeConversionForFourThousand() {
+	public void  checkNegativeConversionForFourThousand() {
 		assertEquals(-1,new RomanToArabicConvertor().convert("MMMM"));
 	}
 	/**
 	 * the following tests are for random and right versions of the  roman numbers
 	 */
 	@Test
-	public void  testConversionForRight1909() {
+	public void  checkConversionForRight1909() {
 		assertEquals(1909,new RomanToArabicConvertor().convert("MCMIX"));
 	}
 	@Test
-	public void  testConversionForRight1903() {
+	public void  checkConversionForRight1903() {
 		assertEquals(1903,new RomanToArabicConvertor().convert("MCMIII"));
 	} 
 	@Test
-	public void  testConversionForRandom1910() {
+	public void  checkConversionForRandom1910() {
 		assertEquals(-1,new RomanToArabicConvertor().convert("MDCCCCX"));
 	}
 	@Test
-	public void  testConversionForRandom1903() {
+	public void  checkConversionForRandom1903() {
 		assertEquals(-1,new RomanToArabicConvertor().convert("MDCDIII"));
 	}
 	
